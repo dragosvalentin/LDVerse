@@ -1,0 +1,144 @@
+body {
+  background-color:darkslategray;
+}
+
+h1 {
+  padding-top: 10px;
+  font-family: "Arial Black", sans-serif;
+  font-size: 4.5em;
+  letter-spacing: -1px;
+  color: white;
+  text-align: center;
+}
+
+.nav-main {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1000;
+}
+
+.btn-toggle-nav {
+  width: 60px;
+  height: 100%;
+  background-color:#009879;
+  background-image:url("./Resources/button.png");
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center;
+  cursor: pointer;
+}
+
+.btn-toggle-nav:hover {
+  opacity: 0.5;
+}
+
+.nav-main ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 15px;
+}
+
+.nav-main ul li {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+  text-transform: uppercase;
+  line-height: 25px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-main ul li a {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}
+
+.nav-sidebar {
+  position: fixed;
+  left: 1;
+  bottom: 0;
+  width: 50px;
+  height: calc(100vh - 60px);
+  padding: 0 5px;
+  background-color: black;
+  z-index: 1000;
+}
+
+.nav-sidebar ul {
+  padding-top: 15px;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.nav-sidebar ul li {
+  line-height: 60px;
+  list-style: none;
+
+}
+
+.nav-sidebar ul li span, .nav-sidebar ul li a {
+  display: block;
+  height: 60px;
+  padding: 0 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  white-space: nowrap;
+  opacity: 0;
+
+}
+
+.nav-sidebar ul li a:hover {
+  background-color: darkgray;
+}
+
+
+
+img {
+  max-width: 30%;
+  max-height: 30%;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+p {
+  color: white;
+  text-align: center;
+  font-size: 20px
+
+}
+
+
+
+table,th, td {
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px!important;
+  height: 100px!important;
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  
+}
+
+thead {
+  font-size: 30px;
+  background-color: #009879;
+}
+
+tbody {
+  background-color: #f3f3f3;
+}
+
+tfoot {
+  background-color: #009879;
+}
