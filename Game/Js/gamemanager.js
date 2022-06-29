@@ -17,7 +17,7 @@ let GameManager = {
                 break;
         }
      let getInterface = document.querySelector(".interface");
-     getInterface.innerHTML = '<img src="Game/images/Avatar Player/' + classType.toLowerCase() + '.jpg" class="img-avatar"><div><h3>' + classType +'</h3><p class="health-player"> Health: ' + player.health + '</p><p> Mana: ' + player.mana + '</p><p> Strength: ' + player.strength + '</p><p> Agility: ' + player.agility + '</p><p> Speed: ' + player.speed + '</p></div>';
+     getInterface.innerHTML = '<img src="./Game/images/Avatar Player/' + classType.toLowerCase() + '.jpg" class="img-avatar"><div><h3>' + classType +'</h3><p class="health-player"> Health: ' + player.health + '</p><p> Mana: ' + player.mana + '</p><p> Strength: ' + player.strength + '</p><p> Agility: ' + player.agility + '</p><p> Speed: ' + player.speed + '</p></div>';
     },
     setPreFight: function() {
         let getHeader = document.querySelector(".header");
@@ -46,7 +46,7 @@ let GameManager = {
        }
        getHeader.innerHTML = '<p>Task: Choose your move!</p>';
        getActions.innerHTML = '<a href="#" class="btn-prefight" onclick="PlayerMoves.calcAttack()">Attack!</a>';
-       getEnemy.innerHTML = '<img src="images/Avatar Enemy/' + enemy.enemyType.toLowerCase() + '.jpg" + enemy.enemyType + class="img-avatar"><div><h3>' + enemy.enemyType + '</h3><p class="health-enemy">Health: ' + enemy.health + '</p><p>Mana: ' + enemy.mana + '</p><p>Strength: ' + enemy.strength + '</p><p>Agility: ' + enemy.agility + '</p><p>Speed: ' + enemy.speed + '</p></div>';
+       getEnemy.innerHTML = '<img src="./Game/images/Avatar Enemy/ + enemy.enemyType.toLowerCase() + '.jpg" + enemy.enemyType + class="img-avatar"><div><h3>' + enemy.enemyType + '</h3><p class="health-enemy">Health: ' + enemy.health + '</p><p>Mana: ' + enemy.mana + '</p><p>Strength: ' + enemy.strength + '</p><p>Agility: ' + enemy.agility + '</p><p>Speed: ' + enemy.speed + '</p></div>';
    },
     
 }
