@@ -32,8 +32,8 @@ let GameManager = {
         let getActions = document.querySelector(".actions");
         let getEnemy = document.querySelector(".enemy");
         //Create Enemy!
-        let enemy00 = new Enemy("tiger", 200, 0, 200, 50, 50);
-        let enemy01 = new Enemy('wizzard', 100, 200, 50, 50, 100);
+        let enemy00 = new Enemy('Tiger', 200, 0, 200, 50, 50);
+        let enemy01 = new Enemy('Wizzard', 100, 200, 50, 50, 100);
         let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(2));
         console.log(chooseRandomEnemy);
         switch (chooseRandomEnemy) {
