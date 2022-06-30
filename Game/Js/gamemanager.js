@@ -6,13 +6,13 @@ let GameManager = {
     },
     resetPlayer: function(classType) {
         switch (classType) {
-            case "warrior":
+            case "Warrior":
                 player = new Player(classType, 200, 0, 200, 100, 50);
                 break;
-            case "shaman":
+            case "Shaman":
                 player = new Player(classType, 100, 200, 50, 50, 100);
                 break;
-            case "monk":
+            case "Monk":
                 player = new Player(classType, 100, 100, 100, 100, 50);
                 break;
         }
